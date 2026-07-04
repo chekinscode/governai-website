@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>State of AI Security 2026 — GovernAI Resources</title>
+<meta name="description" content="Our annual look at how enterprises are governing AI adoption.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2317B6C4'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='700' font-size='18' fill='%2306222A'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,800,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">Govern<span class="accent-text">AI</span><span class="dot"></span></a>
+    <div class="nav-links" id="nav-links">
+      <a href="../platform.html" class="nav-link">Platform</a>
+      <a href="../solutions.html" class="nav-link">Solutions</a>
+      <a href="../compare.html" class="nav-link">Compare</a>
+      <a href="../pricing.html" class="nav-link">Pricing</a>
+      <a href="../resources.html" class="nav-link active">Resources</a>
+      <a href="../about.html" class="nav-link">About</a>
+      <div class="nav-links-mobile-actions">
+        <a href="../console.html" target="_blank" rel="noopener noreferrer" class="nav-link">View Demo &#8599;</a>
+        <a href="../waitlist.html?plan=professional" class="btn btn-primary btn-sm">Join Waitlist</a>
+      </div>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle light and dark mode"><span class="material-symbols-outlined" style="font-size:18px;">contrast</span></button>
+      <a href="../console.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">View Demo ↗</a>
+      <a href="../waitlist.html?plan=professional" class="btn btn-primary btn-sm">Join Waitlist</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<main id="main-content">
+<section style="padding-bottom:16px;">
+  <div class="container" style="max-width:760px;">
+    <div class="reveal">
+      <a href="../resources.html" class="text-accent" style="font-size:0.85rem; font-weight:600;">&larr; Back to Resources</a>
+      <div class="article-meta">
+        <span class="badge badge-muted">Report</span>
+        <span class="divider-dot"></span>
+        <span>10 min read</span>
+        <span class="divider-dot"></span>
+        <span>Updated January 2026</span>
+      </div>
+      <h1 class="mt-16" style="font-size:clamp(1.8rem,3.6vw,2.5rem); text-align:left;">State of AI Security 2026</h1>
+      <p class="lead mt-16" style="text-align:left; max-width:100%;">Our annual look at how enterprises are governing AI adoption.</p>
+    </div>
+  </div>
+</section>
+
+<div class="container" style="max-width:760px;"><div class="section-divider"></div></div>
+
+<section style="padding-top:8px;">
+  <div class="container" style="max-width:760px;">
+    <div class="article-body reveal">
+
+      <p>This report draws on patterns observed across GovernAI's enterprise deployments and conversations with security and IT leaders throughout 2025. It's not a scientific survey — treat the figures as directional signal about where enterprise AI governance is heading, not precise industry-wide statistics.</p>
+
+      <h2>Four trends we're watching</h2>
+
+      <h3>1. Shadow AI usage is still the norm, not the exception</h3>
+      <p>Despite two years of enterprise AI purchasing, the majority of organizations we talk with still find AI tool usage happening outside any centrally managed account when they first get real visibility into it — personal API keys used in scripts, individual subscriptions expensed as software, browser extensions installed without IT review. The gap between "AI is officially rolled out" and "AI usage is fully visible" remains wide.</p>
+
+      <h3>2. Connector-based data exposure is the fastest-growing risk category</h3>
+      <p>As AI tools gained the ability to read connected documents, calendars, and internal wikis, the risk profile shifted from "what does the user type into the chat box" to "what does the AI have access to read on the user's behalf." Indirect prompt injection via retrieved content, and simple over-broad connector permissions, are now a larger share of reported incidents than direct prompt manipulation.</p>
+
+      <h3>3. Human approval gates are moving from "nice to have" to a baseline expectation</h3>
+      <p>As AI agents gained the ability to take actions — not just draft text — a pause-for-human-review step on consequential actions has gone from a differentiator to something security teams ask about by default during vendor evaluation. The organizations furthest along treat this as non-negotiable for any action that writes to a system of record.</p>
+
+      <h3>4. Budget ownership is consolidating under IT and finance jointly</h3>
+      <p>Early AI spend was scattered across departmental budgets with little central visibility. That's changing — more organizations are establishing a single AI budget owner who can see spend across every team and model provider, mirroring how cloud infrastructure spend consolidated under FinOps practices a decade earlier.</p>
+
+      <h2>What this means for security and IT leaders</h2>
+      <ul class="check-list">
+        <li><span class="material-symbols-outlined">check</span>Assume shadow AI usage exists in your organization today, and prioritize visibility over restriction as the first step — you can't govern what you can't see.</li>
+        <li><span class="material-symbols-outlined">check</span>Audit connector permissions with the same rigor you'd apply to any other data access grant, not as an afterthought to chat security.</li>
+        <li><span class="material-symbols-outlined">check</span>Build the human-approval gate into your AI rollout plan from day one — retrofitting it after agents already have write access is a much harder migration.</li>
+        <li><span class="material-symbols-outlined">check</span>Put a single owner on AI budget before your next fiscal year planning cycle, even if full technical consolidation takes longer.</li>
+      </ul>
+
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="section-divider"></div></div>
+
+<section>
+  <div class="container">
+    <div class="panel reveal" style="padding:56px; text-align:center;">
+      <h2 style="font-size:clamp(1.6rem,2.8vw,2.1rem);">See this in your own environment</h2>
+      <div class="hero-ctas mt-24">
+        <a href="../waitlist.html?plan=professional" class="btn btn-primary btn-lg">Join Waitlist</a>
+        <a href="../console.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">View Interactive Demo ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col"><a href="../index.html" class="nav-logo">Govern<span class="accent-text">AI</span><span class="dot"></span></a><p class="mt-16" style="max-width:260px;">The accountable platform for enterprise AI.</p></div>
+      <div class="footer-col"><h5>Product</h5><a href="../platform.html">Platform</a><a href="../solutions.html">Solutions</a><a href="../compare.html">Compare</a><a href="../pricing.html">Pricing</a><a href="../console.html">Interactive Demo</a></div>
+      <div class="footer-col"><h5>Company</h5><a href="../about.html">About</a><a href="../resources.html">Resources</a><a href="../contact.html">Contact</a></div>
+      <div class="footer-col"><h5>Account</h5><a href="../waitlist.html">Join Waitlist</a></div>
+      <div class="footer-col"><h5>Legal</h5><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 GovernAI. All rights reserved.</p><p>HIPAA-aligned · GDPR-aligned · CCPA-aligned · NIST AI RMF-aligned</p></div>
+  </div>
+</footer>
+<script src="../js/shared.js"></script>
+<script src="../js/widgets.js"></script>
+</body>
+</html>

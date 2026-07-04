@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compliance checklist for GenAI — GovernAI Resources</title>
+<meta name="description" content="A working checklist for standing up governed AI under GDPR and the EU AI Act.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2317B6C4'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='700' font-size='18' fill='%2306222A'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,800,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">Govern<span class="accent-text">AI</span><span class="dot"></span></a>
+    <div class="nav-links" id="nav-links">
+      <a href="../platform.html" class="nav-link">Platform</a>
+      <a href="../solutions.html" class="nav-link">Solutions</a>
+      <a href="../compare.html" class="nav-link">Compare</a>
+      <a href="../pricing.html" class="nav-link">Pricing</a>
+      <a href="../resources.html" class="nav-link active">Resources</a>
+      <a href="../about.html" class="nav-link">About</a>
+      <div class="nav-links-mobile-actions">
+        <a href="../console.html" target="_blank" rel="noopener noreferrer" class="nav-link">View Demo &#8599;</a>
+        <a href="../waitlist.html?plan=professional" class="btn btn-primary btn-sm">Join Waitlist</a>
+      </div>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle light and dark mode"><span class="material-symbols-outlined" style="font-size:18px;">contrast</span></button>
+      <a href="../console.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">View Demo ↗</a>
+      <a href="../waitlist.html?plan=professional" class="btn btn-primary btn-sm">Join Waitlist</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<main id="main-content">
+<section style="padding-bottom:16px;">
+  <div class="container" style="max-width:760px;">
+    <div class="reveal">
+      <a href="../resources.html" class="text-accent" style="font-size:0.85rem; font-weight:600;">&larr; Back to Resources</a>
+      <div class="article-meta">
+        <span class="badge badge-warn">Checklist</span>
+        <span class="divider-dot"></span>
+        <span>6 min read</span>
+        <span class="divider-dot"></span>
+        <span>Updated June 2026</span>
+      </div>
+      <h1 class="mt-16" style="font-size:clamp(1.8rem,3.6vw,2.5rem); text-align:left;">Compliance checklist for GenAI</h1>
+      <p class="lead mt-16" style="text-align:left; max-width:100%;">A working checklist for standing up governed AI under GDPR and the EU AI Act.</p>
+    </div>
+  </div>
+</section>
+
+<div class="container" style="max-width:760px;"><div class="section-divider"></div></div>
+
+<section style="padding-top:8px;">
+  <div class="container" style="max-width:760px;">
+    <div class="article-body reveal">
+
+      <p>This is a working checklist, not legal advice — every organization's obligations depend on its specific use cases, data, and jurisdiction. Treat it as a starting point for a conversation with your legal and compliance teams, not a substitute for one.</p>
+
+      <h2>Foundational data governance</h2>
+      <ol class="step-list">
+        <li>Map every system that feeds data into an AI tool — connectors, uploads, and integrations all count, including ones set up informally by individual teams.</li>
+        <li>Classify data by sensitivity before it reaches a model: public, internal, confidential, and regulated (PII, health, financial) each need different handling rules.</li>
+        <li>Confirm a Data Processing Agreement is in place with every AI vendor that touches regulated data, covering retention, sub-processors, and deletion rights.</li>
+        <li>Document your lawful basis for processing personal data through AI systems under GDPR Article 6, and update your Records of Processing Activities.</li>
+      </ol>
+
+      <h2>EU AI Act specific steps</h2>
+      <ol class="step-list">
+        <li>Classify each AI use case by risk tier (unacceptable, high, limited, minimal) — the obligations attached to a use case scale directly with its tier.</li>
+        <li>For high-risk use cases, complete a conformity assessment and maintain the required technical documentation before deployment.</li>
+        <li>Implement human oversight for any use case that falls in the high-risk tier — this typically means a named person reviewing and approving consequential outputs before they take effect, not just a theoretical ability to intervene.</li>
+        <li>Ensure transparency obligations are met: users interacting with an AI system need to know they're doing so, and AI-generated content that could be mistaken for human-generated content needs to be labeled where the Act requires it.</li>
+      </ol>
+
+      <h2>Security and access controls</h2>
+      <ol class="step-list">
+        <li>Enforce SSO and role-based access so AI tool access follows the same identity governance as every other enterprise system.</li>
+        <li>Confirm PII and sensitive data are redacted or tokenized before being sent to any third-party model provider, unless a specific agreement permits otherwise.</li>
+        <li>Test your prompt-injection and data-exfiltration defenses against your actual connector setup, not just in the abstract.</li>
+      </ol>
+
+      <h2>Auditability</h2>
+      <ol class="step-list">
+        <li>Maintain an immutable audit log of every AI interaction that touches regulated data or takes a consequential action — who asked, what was retrieved, what was generated, and who approved it.</li>
+        <li>Confirm the audit log can be exported in a format your compliance and legal teams can actually use during a regulatory inquiry, not just a raw database dump.</li>
+        <li>Set a retention policy for audit records that matches your regulatory obligations, which are often longer than your default data retention policy.</li>
+      </ol>
+
+      <h2>Ongoing operations</h2>
+      <ol class="step-list">
+        <li>Re-run the risk classification whenever a use case's scope changes — a tool that started as an internal drafting assistant can drift into a high-risk use case without anyone updating its classification.</li>
+        <li>Train employees on acceptable use, including what data should never be pasted into an AI tool that hasn't been vetted by your security team.</li>
+        <li>Review vendor compliance posture (SOC 2, ISO 27001, sub-processor lists) at renewal, not just at initial signing.</li>
+      </ol>
+
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="section-divider"></div></div>
+
+<section>
+  <div class="container">
+    <div class="panel reveal" style="padding:56px; text-align:center;">
+      <h2 style="font-size:clamp(1.6rem,2.8vw,2.1rem);">See this in your own environment</h2>
+      <div class="hero-ctas mt-24">
+        <a href="../waitlist.html?plan=professional" class="btn btn-primary btn-lg">Join Waitlist</a>
+        <a href="../console.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">View Interactive Demo ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col"><a href="../index.html" class="nav-logo">Govern<span class="accent-text">AI</span><span class="dot"></span></a><p class="mt-16" style="max-width:260px;">The accountable platform for enterprise AI.</p></div>
+      <div class="footer-col"><h5>Product</h5><a href="../platform.html">Platform</a><a href="../solutions.html">Solutions</a><a href="../compare.html">Compare</a><a href="../pricing.html">Pricing</a><a href="../console.html">Interactive Demo</a></div>
+      <div class="footer-col"><h5>Company</h5><a href="../about.html">About</a><a href="../resources.html">Resources</a><a href="../contact.html">Contact</a></div>
+      <div class="footer-col"><h5>Account</h5><a href="../waitlist.html">Join Waitlist</a></div>
+      <div class="footer-col"><h5>Legal</h5><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 GovernAI. All rights reserved.</p><p>HIPAA-aligned · GDPR-aligned · CCPA-aligned · NIST AI RMF-aligned</p></div>
+  </div>
+</footer>
+<script src="../js/shared.js"></script>
+<script src="../js/widgets.js"></script>
+</body>
+</html>

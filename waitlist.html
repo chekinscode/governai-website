@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join the Waitlist — GovernAI</title>
+<meta name="description" content="Join the GovernAI waitlist. Tell us your email and the plan you'd like to try, and we'll reach out as new spots open up.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2317B6C4'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='700' font-size='18' fill='%2306222A'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,800,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Govern<span class="accent-text">AI</span><span class="dot"></span></a>
+    <div class="nav-links" id="nav-links">
+      <a href="platform.html" class="nav-link">Platform</a>
+      <a href="solutions.html" class="nav-link">Solutions</a>
+      <a href="compare.html" class="nav-link">Compare</a>
+      <a href="pricing.html" class="nav-link">Pricing</a>
+      <a href="resources.html" class="nav-link">Resources</a>
+      <a href="about.html" class="nav-link">About</a>
+      <div class="nav-links-mobile-actions">
+        <a href="console.html" target="_blank" rel="noopener noreferrer" class="nav-link">View Demo &#8599;</a>
+        <a href="waitlist.html" class="btn btn-primary btn-sm">Join Waitlist</a>
+      </div>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle light and dark mode"><span class="material-symbols-outlined" style="font-size:18px;">contrast</span></button>
+      <a href="console.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">View Demo ↗</a>
+      <a href="waitlist.html" class="btn btn-primary btn-sm">Join Waitlist</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<main id="main-content">
+<section style="padding-bottom:8px;">
+  <div class="container" style="max-width:640px; text-align:center;">
+    <div class="section-head reveal">
+      <span class="eyebrow">Early Access</span>
+      <h1 style="font-size:clamp(1.9rem,3.6vw,2.6rem);">Join the waitlist.</h1>
+      <p class="lead" style="margin:0 auto;">We're onboarding new organizations in small batches. Tell us your email and the plan you'd like to try, and we'll reach out as a spot opens up.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:16px;">
+  <div class="card auth-card reveal in" id="waitlist-card">
+    <div id="waitlist-form-wrap">
+      <h1 style="font-size:1.4rem;">Request access</h1>
+      <p class="text-muted mt-16" style="font-size:0.9rem;">No spam — just a note when it's your turn.</p>
+      <form id="waitlist-form" class="mt-24">
+        <div class="form-field">
+          <label for="wl-email">Work email <span class="required">*</span></label>
+          <input id="wl-email" name="email" type="email" required autocomplete="email" placeholder="you@company.com">
+        </div>
+        <div class="form-field">
+          <label for="wl-plan">Which plan interests you? <span class="required">*</span></label>
+          <select id="wl-plan" name="plan" required>
+            <option value="" disabled selected>Select a plan</option>
+            <option value="starter">Starter — $19/user/mo</option>
+            <option value="professional">Professional — $49/user/mo</option>
+            <option value="enterprise">Enterprise — Custom</option>
+            <option value="not-sure">Not sure yet</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;" id="waitlist-submit">Join Waitlist</button>
+        <p id="waitlist-error" class="hidden mt-16" style="font-size:0.85rem; color:var(--danger); text-align:center;"></p>
+      </form>
+    </div>
+    <div id="waitlist-success" class="hidden" style="text-align:center;">
+      <span class="material-symbols-outlined" style="font-size:40px; color:var(--success);">check_circle</span>
+      <h1 style="font-size:1.4rem; margin-top:16px;">You're on the list.</h1>
+      <p class="mt-16">Thanks — we've got your details and will reach out at the email you provided as new spots open up.</p>
+      <a href="index.html" class="btn btn-outline mt-24" style="width:100%;">Back to home</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col"><a href="index.html" class="nav-logo">Govern<span class="accent-text">AI</span><span class="dot"></span></a><p class="mt-16" style="max-width:260px;">The accountable platform for enterprise AI.</p></div>
+      <div class="footer-col"><h5>Product</h5><a href="platform.html">Platform</a><a href="solutions.html">Solutions</a><a href="compare.html">Compare</a><a href="pricing.html">Pricing</a><a href="console.html">Interactive Demo</a></div>
+      <div class="footer-col"><h5>Company</h5><a href="about.html">About</a><a href="resources.html">Resources</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h5>Account</h5><a href="waitlist.html">Join Waitlist</a></div>
+      <div class="footer-col"><h5>Legal</h5><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 GovernAI. All rights reserved.</p><p>HIPAA-aligned · GDPR-aligned · CCPA-aligned · NIST AI RMF-aligned</p></div>
+  </div>
+</footer>
+<script src="js/shared.js"></script>
+<script src="js/widgets.js"></script>
+<script>
+(function () {
+  var params = new URLSearchParams(window.location.search);
+  var planParam = params.get("plan");
+  if (planParam) {
+    var select = document.getElementById("wl-plan");
+    for (var i = 0; i < select.options.length; i++) {
+      if (select.options[i].value === planParam) { select.value = planParam; break; }
+    }
+  }
+
+  var form = document.getElementById("waitlist-form");
+  var errorEl = document.getElementById("waitlist-error");
+  var submitBtn = document.getElementById("waitlist-submit");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    errorEl.classList.add("hidden");
+    var email = document.getElementById("wl-email").value.trim();
+    var plan = document.getElementById("wl-plan").value;
+    if (!email || !plan) return;
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Submitting…";
+
+    fetch("https://formsubmit.co/ajax/admin@governaiapp.com", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify({
+        email: email,
+        plan: plan,
+        _subject: "New GovernAI waitlist signup: " + email
+      })
+    })
+      .then(function (res) {
+        if (!res.ok) throw new Error("Request failed");
+        return res.json();
+      })
+      .then(function () {
+        document.getElementById("waitlist-form-wrap").classList.add("hidden");
+        document.getElementById("waitlist-success").classList.remove("hidden");
+      })
+      .catch(function () {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Join Waitlist";
+        errorEl.textContent = "Something went wrong submitting the form. Please email admin@governaiapp.com directly with your email and plan choice.";
+        errorEl.classList.remove("hidden");
+      });
+  });
+})();
+</script>
+</body>
+</html>
