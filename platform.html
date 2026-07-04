@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Platform — GovernAI</title>
+<meta name="description" content="Every GovernAI capability in depth: the chat experience, governance and policy controls, cost visibility, company knowledge, human oversight, compliance, security, and admin controls.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2317B6C4'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='700' font-size='18' fill='%2306222A'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,800,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Govern<span class="accent-text">AI</span><span class="dot"></span></a>
+    <div class="nav-links" id="nav-links">
+      <a href="platform.html" class="nav-link active">Platform</a>
+      <a href="solutions.html" class="nav-link">Solutions</a>
+      <a href="compare.html" class="nav-link">Compare</a>
+      <a href="pricing.html" class="nav-link">Pricing</a>
+      <a href="resources.html" class="nav-link">Resources</a>
+      <a href="about.html" class="nav-link">About</a>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle light and dark mode"><span class="material-symbols-outlined" style="font-size:18px;">contrast</span></button>
+      <a href="login.html" class="btn btn-ghost btn-sm">Log In</a>
+      <a href="console.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">View Demo ↗</a>
+      <a href="signup.html?plan=professional" class="btn btn-primary btn-sm">Start Free Trial</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<main id="main-content">
+
+<section style="padding-bottom:32px;">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Platform</span>
+      <h1 style="font-size:clamp(2.2rem,4vw,3.2rem);">Everything GovernAI does, in plain English.</h1>
+      <p class="lead" style="margin:0 auto;">Eight capability areas, every one shipped and verified — not a roadmap slide.</p>
+    </div>
+    <div class="platform-toc reveal">
+      <a href="#chat-experience" class="pill">Chat Experience</a>
+      <a href="#governance" class="pill">Governance &amp; Policy</a>
+      <a href="#cost" class="pill">Cost Visibility</a>
+      <a href="#knowledge" class="pill">Company Knowledge</a>
+      <a href="#oversight" class="pill">Human Oversight</a>
+      <a href="#compliance" class="pill">Compliance</a>
+      <a href="#security" class="pill">Security &amp; Identity</a>
+      <a href="#admin" class="pill">Admin Controls</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 1. CHAT EXPERIENCE ============ -->
+<section id="chat-experience" class="platform-nav-anchor">
+  <div class="container">
+    <div class="feature-row reveal">
+      <div>
+        <span class="section-tag">01 · THE CHAT EXPERIENCE</span>
+        <h2>A chat interface employees actually want to use. Governance runs invisibly underneath.</h2>
+        <ul class="feature-points">
+          <li>One familiar interface for GPT-4o, Claude, Gemini, Mistral, and more — switch models in one click</li>
+          <li>Rich rendering: syntax-highlighted code with copy buttons, clean tables, LaTeX math</li>
+          <li>Drag in PDFs, Word docs, spreadsheets, or images — stored on your own servers, never a third party</li>
+          <li>Save and reuse your best prompts; admins publish a shared company library</li>
+          <li>Side-by-side model comparison, and generated documents open in a resizable side panel</li>
+        </ul>
+      </div>
+      <div class="widget">
+        <div class="widget-head">
+          <span class="widget-title">Rendered response preview</span>
+          <span class="badge badge-accent">Live render</span>
+        </div>
+        <div class="widget-body">
+          <p style="color:var(--ink); font-size:0.94rem; margin-bottom:14px;">Here's the quarterly cost breakdown, with the routing logic that produced it:</p>
+          <div class="terminal" style="box-shadow:none;">
+            <div class="terminal-head">
+              <div class="terminal-dot" style="background:#F0546A;"></div>
+              <div class="terminal-dot" style="background:#F5B84E;"></div>
+              <div class="terminal-dot" style="background:#34D399;"></div>
+              <div class="terminal-title">routing.py</div>
+            </div>
+            <div class="terminal-body"><span class="prompt">&gt;&gt;&gt;</span> route(request, cheapest_capable=True)<br>&nbsp;&nbsp;selected: gpt-4o-mini &nbsp;<span class="text-accent">// 61% cheaper, same quality bar</span></div>
+          </div>
+          <table class="data-table mt-24">
+            <thead><tr><th>Team</th><th>Requests</th><th>Cost</th></tr></thead>
+            <tbody>
+              <tr><td>Sales</td><td class="mono-cell">4,208</td><td class="mono-cell">$212.40</td></tr>
+              <tr><td>Support</td><td class="mono-cell">9,114</td><td class="mono-cell">$188.05</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="section-divider"></div></div>
+
+<!-- ============ 2. GOVERNANCE & POLICY ============ -->
+<section id="governance" class="platform-nav-anchor">
+  <div class="container">
+    <div class="feature-row reverse reveal">
+      <div class="widget" id="shadow-mode-widget">
+        <div class="widget-head">
+          <span class="widget-title" id="shadow-mode-label">Shadow Mode — monitoring only</span>
+          <div class="toggle-switch on" data-toggle role="switch" aria-checked="true" aria-label="Toggle shadow mode" tabindex="0"><span class="knob"></span></div>
+        </div>
+        <div class="widget-body">
+          <div class="data-table">
+            <div class="model-row" data-shadow-row="allow"><span>"Summarize this customer's support history"</span><span class="badge">—</span></div>
+            <div class="model-row" data-shadow-row="block"><span>"Send $4,200 refund to account #8831"</span><span class="badge">—</span></div>
+            <div class="model-row" data-shadow-row="allow"><span>"Draft a reply about our SLA terms"</span><span class="badge">—</span></div>
+          </div>
+          <p class="mt-16" style="font-size:0.85rem;">Trial a new policy without enforcing it — see exactly what would have been blocked before a single employee is affected.</p>
+        </div>
+      </div>
+      <div>
+        <span class="section-tag">02 · GOVERNANCE &amp; POLICY CONTROLS</span>
+        <h2>Set the rules. GovernAI enforces them before the AI ever responds.</h2>
+        <ul class="feature-points">
+          <li>Content policies per team — sales can discuss pricing, others can't — enforced across every model</li>
+          <li>Automatic detection and redaction of 50+ types of sensitive data before it leaves your systems</li>
+          <li>Geographic residency controls, so EU employee data stays on EU infrastructure</li>
+          <li>Prompt-injection defense — blocks hidden instructions embedded in documents or messages</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature-row reveal mt-48">
+      <div>
+        <span class="section-tag" style="margin-bottom:0;">BUDGET CONTROLS</span>
+        <h3 class="mt-16">Per-team spending limits. Alerts before anyone gets locked out.</h3>
+        <p class="mt-16">Set a monthly budget per team. Alerts fire at 50%, 80%, and 100% — to Slack, Teams, email, or any webhook. Drag the slider to see the alert states.</p>
+      </div>
+      <div class="widget" id="budget-widget">
+        <div class="widget-head"><span class="widget-title">Engineering — Monthly Budget</span><span id="budget-pct" class="badge badge-accent">42%</span></div>
+        <div class="widget-body">
+          <div class="progress-track"><div class="progress-fill" id="budget-fill" style="width:42%;"></div></div>
+          <div class="flex-between mt-16"><span id="budget-spend" class="mono" style="font-size:0.85rem; color:var(--ink-muted);">$5,040 of $12,000</span></div>
+          <input type="range" id="budget-slider" min="0" max="110" value="42" style="width:100%; margin-top:16px; accent-color:var(--accent);">
+          <div class="budget-alert" id="budget-alert"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="section-divider"></div></div>
+
+<!-- ============ 3. COST VISIBILITY ============ -->
+<section id="cost" class="platform-nav-anchor">
+  <div class="container">
+    <div class="feature-row reverse reveal">
+      <div class="widget">
+        <div class="widget-head"><span class="widget-title">Spend by team — last 6 weeks</span><span class="badge badge-success">Live</span></div>
+        <div class="widget-body">
+          <div class="bar-chart">
+            <div class="bar-col"><div class="bar" style="height:52%;"></div><span class="bar-label">W1</span></div>
+            <div class="bar-col"><div class="bar" style="height:61%;"></div><span class="bar-label">W2</span></div>
+            <div class="bar-col"><div class="bar" style="height:48%;"></div><span class="bar-label">W3</span></div>
+            <div class="bar-col"><div class="bar" style="height:70%;"></div><span class="bar-label">W4</span></div>
+            <div class="bar-col"><div class="bar" style="height:58%;"></div><span class="bar-label">W5</span></div>
+            <div class="bar-col"><div class="bar" style="height:39%;"></div><span class="bar-label">W6</span></div>
+          </div>
+          <div class="chart-legend"><span><span class="dot" style="background:var(--accent);"></span>Total spend</span><span><span class="dot" style="background:var(--success);"></span>After savings</span></div>
+        </div>
+      </div>
+      <div>
+        <span class="section-tag">03 · COST VISIBILITY &amp; SAVINGS</span>
+        <h2>See exactly what AI costs — and exactly how much GovernAI is saving you.</h2>
+        <ul class="feature-points">
+          <li>Spend by team, user, model, and date range — export to CSV for SAP, Oracle, Workday</li>
+          <li>Historical trends, so you can see whether AI spend is growing month over month</li>
+          <li>A dedicated savings dashboard shows the ROI of GovernAI in pounds and dollars, always visible</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-48 reveal">
+      <div class="widget">
+        <div class="widget-head"><span class="widget-title">Automatic cost reduction — this month</span><span class="badge badge-accent"><span data-count-to="31" data-suffix="%">0</span> lower spend</span></div>
+        <div class="widget-body">
+          <div class="savings-grid">
+            <div class="savings-item"><div class="amt">$<span data-count-to="4120" data-decimals="0">0</span></div><div class="label">Smart answer reuse</div></div>
+            <div class="savings-item"><div class="amt">$<span data-count-to="2860" data-decimals="0">0</span></div><div class="label">Conversation compression</div></div>
+            <div class="savings-item"><div class="amt">$<span data-count-to="6390" data-decimals="0">0</span></div><div class="label">Cheapest-capable routing</div></div>
+            <div class="savings-item"><div class="amt">$<span data-count-to="1710" data-decimals="0">0</span></div><div class="label">Prompt caching</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="section-divider"></div></div>
+
+<!-- ============ 4. COMPANY KNOWLEDGE ============ -->
+<section id="knowledge" class="platform-nav-anchor">
+  <div class="container">
+    <div class="feature-row reveal">
+      <div>
+        <span class="section-tag">04 · COMPANY KNOWLEDGE</span>
+        <h2>AI that knows your business — grounded in your own tools and documents.</h2>
+        <ul class="feature-points">
+          <li>Google Workspace, Microsoft 365, Slack, GitHub, Confluence, Notion, Jira, Salesforce, S3, SQL, and custom REST APIs</li>
+          <li>All indexed content is stored in your own database — GovernAI cannot access your company's information</li>
+          <li>Every answer grounded in a document shows its source — name and excerpt, every time</li>
+          <li>Automatic sync — only changed content is re-processed, so it stays fast and current</li>
+        </ul>
+        <p class="mt-24 text-muted" style="font-size:0.85rem;">Click a connector to see a cited answer drawn from it.</p>
+      </div>
+      <div class="widget" id="connectors-widget">
+        <div class="widget-head"><span class="widget-title">Company Knowledge — connected sources</span></div>
+        <div class="widget-body">
+          <div class="connector-list">
+            <div class="connector-item" data-connector="confluence"><span class="name"><span class="status-dot on"></span>Confluence</span><span class="badge badge-muted">Synced 4m ago</span></div>
+            <div class="connector-item" data-connector="slack"><span class="name"><span class="status-dot on"></span>Slack</span><span class="badge badge-muted">Synced 1m ago</span></div>
+            <div class="connector-item" data-connector="salesforce"><span class="name"><span class="status-dot on"></span>Salesforce</span><span class="badge badge-muted">Synced 12m ago</span></div>
+            <div class="connector-item" data-connector="sharepoint"><span class="name"><span class="status-dot on"></span>SharePoint</span><span class="badge badge-muted">Synced 6m ago</span></div>
+          </div>
+          <div id="citation-body" class="mt-24"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="section-divider"></div></div>
+
+<!-- ============ 5. HUMAN OVERSIGHT ============ -->
+<section id="oversight" class="platform-nav-anchor">
+  <div class="container">
+    <div class="feature-row reverse reveal">
+      <div class="widget" id="approval-flow-widget">
+        <div class="widget-head"><span class="widget-title">Approval Queue — write action requested</span><button class="btn btn-ghost btn-sm" id="approval-replay">Replay ↻</button></div>
+        <div class="widget-body">
+          <div class="flow-steps">
+            <div class="flow-step" data-flow-step><div class="flow-num">1</div><div><div class="flow-label">Request</div><div class="flow-desc">Employee asks the assistant to act</div></div></div>
+            <div class="flow-step" data-flow-step><div class="flow-num">2</div><div><div class="flow-label">Detected</div><div class="flow-desc">Write-intent caught, execution paused</div></div></div>
+            <div class="flow-step" data-flow-step><div class="flow-num">3</div><div><div class="flow-label">Reviewed</div><div class="flow-desc">Compliance Officer approves or rejects</div></div></div>
+            <div class="flow-step" data-flow-step><div class="flow-num">4</div><div><div class="flow-label">Logged</div><div class="flow-desc">Action executes, written to audit log</div></div></div>
+          </div>
+          <div id="approval-status"></div>
+        </div>
+      </div>
+      <div>
+        <span class="section-tag">05 · HUMAN OVERSIGHT</span>
+        <h2>AI that asks before it acts.</h2>
+        <ul class="feature-points">
+          <li>The employee who requested an action can never be the one to approve it — cross-party review is structural</li>
+          <li>Unreviewed requests expire automatically — nothing is left hanging</li>
+          <li>Compliance Officers and Admins see a live badge showing pending approvals, like an unread count</li>
+          <li>Full audit trail either way: approved, rejected, or expired</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-48 reveal">
+      <div class="widget" id="estop-widget" style="max-width:640px; margin:0 auto;">
+        <div class="widget-head"><span class="widget-title">Emergency Stop</span><span class="badge badge-danger">Org-wide control</span></div>
+        <div class="widget-body" style="text-align:center;">
+          <p style="margin-bottom:20px;">Suspend all AI access across the entire organization, instantly. One click to restore.</p>
+          <button class="btn btn-danger btn-lg" id="estop-button">Emergency Stop</button>
+          <div class="estop-confirm" id="estop-confirm">
+            <button class="btn btn-outline btn-sm" data-estop-confirm="no">Cancel</button>
+            <button class="btn btn-danger btn-sm" data-estop-confirm="yes">Confirm — suspend all AI access</button>
+          </div>
+          <div class="estop-banner" id="estop-banner"><span class="material-symbols-outlined" style="font-size:18px;">warning</span> AI access is currently suspended for the entire organization.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="section-divider"></div></div>
+
+<!-- ============ 6. COMPLIANCE ============ -->
+<section id="compliance" class="platform-nav-anchor">
+  <div class="container">
+    <div class="section-head left reveal">
+      <span class="section-tag">06 · COMPLIANCE — BUILT FOR REGULATED INDUSTRIES</span>
+      <h2>Built for the EU AI Act from day one — not bolted on after.</h2>
+    </div>
+
+    <div class="widget reveal" id="audit-log-widget">
+      <div class="widget-head"><span class="widget-title">Audit Log</span><span class="badge badge-muted">Minimum 6-month retention</span></div>
+      <div class="widget-body">
+        <div class="audit-toolbar">
+          <input type="text" class="audit-search-input" id="audit-search" placeholder="Search by employee, model, or event…">
+          <div class="pill-row">
+            <button class="pill active" data-audit-filter="all">All</button>
+            <button class="pill" data-audit-filter="policy">Policy triggers</button>
+            <button class="pill" data-audit-filter="approval">Human review</button>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="data-table">
+            <thead><tr><th>Time</th><th>Employee</th><th>Model</th><th>Event</th><th>Cost</th></tr></thead>
+            <tbody>
+              <tr data-event-type="policy"><td class="mono-cell">09:14:02</td><td>M. Alvarez</td><td>GPT-4o</td><td><span class="badge badge-warn">PII redacted</span></td><td class="mono-cell">$0.02</td></tr>
+              <tr data-event-type="approval"><td class="mono-cell">09:12:47</td><td>J. Kim</td><td>Claude</td><td><span class="badge badge-accent">Awaiting approval</span></td><td class="mono-cell">$0.01</td></tr>
+              <tr data-event-type="none"><td class="mono-cell">09:11:30</td><td>R. Osei</td><td>Gemini</td><td><span class="badge badge-success">Served from cache</span></td><td class="mono-cell">$0.00</td></tr>
+              <tr data-event-type="approval"><td class="mono-cell">09:08:55</td><td>D. Chen</td><td>GPT-4o</td><td><span class="badge badge-success">Approved &amp; executed</span></td><td class="mono-cell">$0.03</td></tr>
+              <tr data-event-type="policy"><td class="mono-cell">09:02:11</td><td>S. Novak</td><td>Claude</td><td><span class="badge badge-danger">Blocked — content policy</span></td><td class="mono-cell">$0.00</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-row mt-48 reveal">
+      <div>
+        <h3>EU AI Act Compliance Suite <span class="badge badge-accent">Enterprise</span></h3>
+        <p class="mt-16">Risk register, an Annex IV technical documentation wizard pre-filled from your live system, one-click compliance export, Article 13 transparency banners, and a generated Instructions for Use document.</p>
+        <p class="mt-16 text-muted" style="font-size:0.85rem;">Plus: SIEM export to Splunk, Datadog, Elastic, or AWS CloudWatch, and a FinOps export formatted for SAP, Oracle, or Workday.</p>
+      </div>
+      <div class="widget">
+        <div class="widget-head"><span class="widget-title">Risk Register</span></div>
+        <div class="widget-body">
+          <table class="data-table">
+            <thead><tr><th>Use Case</th><th>Risk Level</th><th>Overseer</th></tr></thead>
+            <tbody>
+              <tr><td>Customer support drafting</td><td><span class="badge risk-badge-Minimal">Minimal</span></td><td>—</td></tr>
+              <tr><td>HR resume screening assist</td><td><span class="badge risk-badge-High">High-Risk</span></td><td>People Ops Lead</td></tr>
+              <tr><td>Contract summarization</td><td><span class="badge risk-badge-Limited">Limited</span></td><td>Legal Counsel</td></tr>
+            </tbody>
+          </table>
+          <button class="btn btn-outline btn-sm mt-24">Export Compliance Package</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="section-divider"></div></div>
+
+<!-- ============ 7. SECURITY & IDENTITY ============ -->
+<section id="security" class="platform-nav-anchor">
+  <div class="container">
+    <div class="feature-row reverse reveal">
+      <div class="widget" id="cmk-widget">
+        <div class="widget-head"><span class="widget-title">Customer-Managed Keys</span><span class="badge badge-accent">Enterprise</span></div>
+        <div class="widget-body">
+          <div class="vault-diagram">
+            <div class="vault-row" data-cmk-row="conv_4471: &quot;Q3 renewal terms with…&quot;">conv_4471: "Q3 renewal terms with…"</div>
+            <div class="vault-row" data-cmk-row="doc_1182: acquisition-memo.pdf">doc_1182: acquisition-memo.pdf</div>
+            <div class="vault-row" data-cmk-row="user_902: preferences + history">user_902: preferences + history</div>
+          </div>
+          <div id="cmk-status"><span class="status-dot on"></span> Key active — data readable by your systems only</div>
+          <button class="btn btn-outline btn-sm mt-24" id="cmk-revoke">Revoke Key</button>
+        </div>
+      </div>
+      <div>
+        <span class="section-tag">07 · ENTERPRISE SECURITY &amp; IDENTITY</span>
+        <h2>Built to satisfy the most demanding enterprise IT department.</h2>
+        <ul class="feature-points">
+          <li>Single sign-on with Okta, Microsoft Entra ID, Google Workspace, or any OpenID Connect provider</li>
+          <li>SCIM 2.0 automated provisioning — access follows group membership instantly, in both directions</li>
+          <li>Customer-Managed Keys — not even GovernAI's own team can read your conversations. Revoke your key and it's permanently unreadable.</li>
+          <li>Network access restrictions to specific IP ranges, and database-level tenant isolation enforced even against application bugs</li>
+        </ul>
+        <div class="logo-row mt-24">
+          <span class="logo-chip">Okta</span>
+          <span class="logo-chip">Microsoft Entra ID</span>
+          <span class="logo-chip">Google Workspace</span>
+          <span class="logo-chip">Any OIDC</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="section-divider"></div></div>
+
+<!-- ============ 8. ADMIN CONTROLS ============ -->
+<section id="admin" class="platform-nav-anchor">
+  <div class="container">
+    <div class="feature-row reveal">
+      <div>
+        <span class="section-tag">08 · ADMIN CONTROLS</span>
+        <h2>Everything IT needs to run AI safely and efficiently — from one panel.</h2>
+        <ul class="feature-points">
+          <li>Team management — budgets, model permissions, and billing codes, mirroring your org structure</li>
+          <li>Model explorer — plain-English comparisons of cost, context length, and availability</li>
+          <li>Org-wide usage dashboard, and connector management with live sync status</li>
+        </ul>
+      </div>
+      <div class="widget">
+        <div class="widget-head"><span class="widget-title">Teams</span></div>
+        <div class="widget-body">
+          <div class="team-card"><div><div class="name">Engineering</div><div class="meta">24 members · $12,000/mo budget</div></div><div class="avatar-stack"><span>JK</span><span>MA</span><span>+22</span></div></div>
+          <div class="team-card"><div><div class="name">Sales</div><div class="meta">11 members · $6,000/mo budget</div></div><div class="avatar-stack"><span>RO</span><span>DC</span><span>+9</span></div></div>
+          <div class="team-card" style="margin-bottom:0;"><div><div class="name">Legal &amp; Compliance</div><div class="meta">5 members · $3,000/mo budget</div></div><div class="avatar-stack"><span>SN</span><span>+4</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="widget mt-48 reveal">
+      <div class="widget-head"><span class="widget-title">Model Explorer</span></div>
+      <div class="widget-body">
+        <div class="model-row"><span class="model-name"><span class="status-dot on"></span>GPT-4o</span><span class="text-muted">128K context · $$</span><span class="toggle-switch on" data-toggle><span class="knob"></span></span></div>
+        <div class="model-row"><span class="model-name"><span class="status-dot on"></span>Claude</span><span class="text-muted">200K context · $$</span><span class="toggle-switch on" data-toggle><span class="knob"></span></span></div>
+        <div class="model-row"><span class="model-name"><span class="status-dot off"></span>Gemini 1.5 Pro</span><span class="text-muted">1M context · $$$</span><span class="toggle-switch" data-toggle><span class="knob"></span></span></div>
+        <div class="model-row"><span class="model-name"><span class="status-dot on"></span>Mistral Large</span><span class="text-muted">32K context · $</span><span class="toggle-switch on" data-toggle><span class="knob"></span></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="panel reveal" style="padding:56px; text-align:center;">
+      <h2 style="font-size:clamp(1.7rem,3vw,2.3rem);">See how it fits your industry</h2>
+      <p class="lead" style="margin:16px auto 28px;">Financial services, healthcare, and other regulated sectors have different priority features — see yours.</p>
+      <a href="solutions.html" class="btn btn-primary btn-lg">Explore Solutions by Industry</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="nav-logo">Govern<span class="accent-text">AI</span><span class="dot"></span></a>
+        <p class="mt-16" style="max-width:260px;">The accountable platform for enterprise AI.</p>
+      </div>
+      <div class="footer-col"><h5>Product</h5><a href="platform.html">Platform</a><a href="solutions.html">Solutions</a><a href="compare.html">Compare</a><a href="pricing.html">Pricing</a><a href="console.html">Interactive Demo</a></div>
+      <div class="footer-col"><h5>Company</h5><a href="about.html">About</a><a href="resources.html">Resources</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h5>Account</h5><a href="login.html">Log In</a><a href="signup.html">Start Free Trial</a><a href="forgot-password.html">Reset Password</a></div>
+      <div class="footer-col"><h5>Legal</h5><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 GovernAI. All rights reserved.</p><p>HIPAA-aligned · GDPR-aligned · CCPA-aligned · NIST AI RMF-aligned</p></div>
+  </div>
+</footer>
+
+<script src="js/shared.js"></script>
+<script src="js/widgets.js"></script>
+</body>
+</html>

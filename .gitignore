@@ -1,0 +1,14 @@
+.DS_Store
+node_modules/
+newversion/
+old code/
+docs/
+build.js
+build_html.js
+checktags.js
+checktags2.js
+patch_diff.js
+patch_diff2.js
+implementation_plan.md
+web_guides.md
+*.docx

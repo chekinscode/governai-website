@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GovernAI — Brand Guide v1.0</title>
+<style>
+  :root {
+    --bg:#070B14; --bg-panel:#0F172A; --bg-surface:#131D33;
+    --ink:#F4F7FB; --ink-secondary:#A9B6CC; --ink-muted:#8592A8;
+    --accent:#17B6C4; --accent-light-safe:#0A6E78;
+    --success:#34D399; --warning:#F5B84E; --danger:#F0546A;
+    --border: rgba(255,255,255,0.09);
+    --font-heading:'Poppins',Arial,sans-serif; --font-body:Arial,sans-serif; --font-mono:'DejaVu Sans Mono',monospace;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink-secondary); font-family:var(--font-body); line-height:1.6; }
+  .wrap { max-width:960px; margin:0 auto; padding:64px 32px 100px; }
+  h1,h2,h3 { font-family:var(--font-heading); color:var(--ink); font-weight:700; }
+  h1 { font-size:2.2rem; margin:0 0 6px; }
+  h2 { font-size:1.5rem; margin:64px 0 20px; padding-top:24px; border-top:1px solid var(--border); }
+  h3 { font-size:1.05rem; margin:28px 0 10px; }
+  p { font-size:0.98rem; }
+  .meta { font-family:var(--font-mono); font-size:0.78rem; color:var(--accent); letter-spacing:1px; text-transform:uppercase; }
+  .logo-tile { background:var(--bg-panel); border:1px solid var(--border); border-radius:16px; padding:40px; display:flex; align-items:center; justify-content:center; margin-bottom:14px; }
+  .logo-tile.light { background:#FFFFFF; }
+  .logo-tile img { max-width:280px; }
+  .row { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  .row3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px; }
+  .caption { font-size:0.8rem; color:var(--ink-muted); text-align:center; margin-top:0; }
+  .swatch { border-radius:12px; border:1px solid var(--border); overflow:hidden; }
+  .swatch .chip { height:72px; }
+  .swatch .info { padding:12px 14px; background:var(--bg-panel); }
+  .swatch .name { color:var(--ink); font-weight:600; font-size:0.88rem; }
+  .swatch .hex { font-family:var(--font-mono); font-size:0.8rem; color:var(--ink-muted); }
+  .swatch-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+  .type-sample { background:var(--bg-panel); border:1px solid var(--border); border-radius:12px; padding:24px 28px; margin-bottom:16px; }
+  .type-sample .label { font-family:var(--font-mono); font-size:0.72rem; color:var(--accent); text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; }
+  table { width:100%; border-collapse:collapse; font-size:0.9rem; }
+  th,td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--border); }
+  th { color:var(--ink); font-family:var(--font-mono); font-size:0.72rem; text-transform:uppercase; letter-spacing:0.5px; }
+  .do { color:var(--success); } .dont { color:var(--danger); }
+  .note { background:var(--bg-surface); border-left:3px solid var(--accent); border-radius:0 8px 8px 0; padding:16px 20px; font-size:0.9rem; }
+  ul { padding-left:20px; } li { margin-bottom:8px; }
+  code { font-family:var(--font-mono); background:var(--bg-surface); padding:2px 6px; border-radius:4px; font-size:0.85em; color:var(--ink); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <span class="meta">Brand Guide · v1.1 · July 2026</span>
+  <h1>GovernAI</h1>
+  <p>Working reference for logo usage, color, and type — extracted from the live site's design tokens (<code>css/styles.css</code>) so this kit and the site never drift apart.</p>
+
+  <div class="note">
+    <strong style="color:var(--ink);">Scope note:</strong> this covers visual identity (logo, color, type) plus the messaging principles established during the headline pass. It is <em>not</em> a full verbal brand-voice guide — nobody has run brand discovery against your actual docs/calls yet. Run the Brand Voice plugin's <code>discover-brand</code> and <code>guideline-generation</code> skills to produce that next; see the closing note.
+  </div>
+
+  <div class="note" style="margin-top:14px;">
+    <strong style="color:var(--ink);">v1.1 changelog:</strong> a follow-up review pass found the site's light-mode accent and semantic (success/warning/danger) colors were under-contrast as text on white — as low as 1.6:1 in one case. Both the site and this kit are now corrected below. The wordmark's light-background SVG/PNG exports were also re-rendered with the corrected accent. New reusable UI patterns from that pass (card hover state, section dividers, bolded compare-table checkmarks) are documented under "Component patterns."
+  </div>
+
+  <h2>Logo</h2>
+  <p>The primary mark is a wordmark — there is no separate icon lockup in day-to-day use. The square mark exists only as a favicon / app icon.</p>
+
+  <div class="row">
+    <div>
+      <div class="logo-tile"><img src="logo/governai-wordmark-dark-bg.svg" alt="GovernAI wordmark, light text, for dark backgrounds"></div>
+      <p class="caption">For dark backgrounds — <code>governai-wordmark-dark-bg.svg</code></p>
+    </div>
+    <div>
+      <div class="logo-tile light"><img src="logo/governai-wordmark-light-bg.svg" alt="GovernAI wordmark, dark text, for light backgrounds"></div>
+      <p class="caption">For light backgrounds — <code>governai-wordmark-light-bg.svg</code></p>
+    </div>
+  </div>
+
+  <div class="row3 mt-24" style="margin-top:20px;">
+    <div>
+      <div class="logo-tile" style="padding:24px;"><img src="logo/governai-mark.svg" alt="GovernAI square mark" style="max-width:96px;"></div>
+      <p class="caption">Icon / favicon only — <code>logo/governai-mark.svg</code></p>
+    </div>
+  </div>
+
+  <h3>Clear space &amp; minimum size</h3>
+  <p>Keep clear space around the wordmark equal to the height of the dot on every side. Do not scale the wordmark below 90px wide — the dot and letterforms lose crispness sooner than the type looks unreadable. The square mark should not run below 16px (its favicon floor).</p>
+
+  <h3>Rules</h3>
+  <table>
+    <tr><th>Do</th><th>Don't</th></tr>
+    <tr><td class="do">Use the dark-bg version on navy/black surfaces</td><td class="dont">Recolor "AI" or the dot to a non-brand color</td></tr>
+    <tr><td class="do">Use the light-bg version on white/light surfaces</td><td class="dont">Stretch, skew, or add a drop shadow</td></tr>
+    <tr><td class="do">Keep "Govern" and "AI" as one word, no space</td><td class="dont">Place the dark-bg wordmark on a light background (fails contrast) or vice versa</td></tr>
+    <tr><td class="do">Use the square mark for favicons/app icons only</td><td class="dont">Use the square mark as a stand-in for the full logo in headers</td></tr>
+  </table>
+
+  <h2>Color</h2>
+  <p>Dark is the primary surface; light mode exists as a documented, tested alternate (see <code>css/styles.css</code> <code>[data-theme="light"]</code>), not an afterthought.</p>
+
+  <h3>Core surfaces &amp; ink (dark mode — default)</h3>
+  <div class="swatch-grid">
+    <div class="swatch"><div class="chip" style="background:#070B14;"></div><div class="info"><div class="name">Background</div><div class="hex">#070B14</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#0F172A;"></div><div class="info"><div class="name">Panel</div><div class="hex">#0F172A</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#F4F7FB;"></div><div class="info"><div class="name">Ink (primary text)</div><div class="hex">#F4F7FB</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#A9B6CC;"></div><div class="info"><div class="name">Ink secondary</div><div class="hex">#A9B6CC</div></div></div>
+  </div>
+
+  <h3 style="margin-top:32px;">Brand accent</h3>
+  <div class="swatch-grid">
+    <div class="swatch"><div class="chip" style="background:#17B6C4;"></div><div class="info"><div class="name">Accent (teal-cyan)</div><div class="hex">#17B6C4</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#3FD4E1;"></div><div class="info"><div class="name">Accent hover</div><div class="hex">#3FD4E1</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#0A6E78;"></div><div class="info"><div class="name">Accent (light-bg safe)</div><div class="hex">#0A6E78</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#6C7BFF;"></div><div class="info"><div class="name">Accent 2 (data viz only)</div><div class="hex">#6C7BFF</div></div></div>
+  </div>
+
+  <h3 style="margin-top:32px;">Semantic — dark mode (default)</h3>
+  <div class="swatch-grid">
+    <div class="swatch"><div class="chip" style="background:#34D399;"></div><div class="info"><div class="name">Success</div><div class="hex">#34D399</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#F5B84E;"></div><div class="info"><div class="name">Warning</div><div class="hex">#F5B84E</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#F0546A;"></div><div class="info"><div class="name">Danger</div><div class="hex">#F0546A</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#E31B3D;"></div><div class="info"><div class="name">Danger (strong / Emergency Stop)</div><div class="hex">#E31B3D</div></div></div>
+  </div>
+
+  <h3 style="margin-top:32px;">Semantic — light-bg safe</h3>
+  <div class="swatch-grid">
+    <div class="swatch"><div class="chip" style="background:#0A7A4C;"></div><div class="info"><div class="name">Success</div><div class="hex">#0A7A4C</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#8A5A00;"></div><div class="info"><div class="name">Warning</div><div class="hex">#8A5A00</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#B91C3C;"></div><div class="info"><div class="name">Danger</div><div class="hex">#B91C3C</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#C4123A;"></div><div class="info"><div class="name">Danger (strong / Emergency Stop)</div><div class="hex">#C4123A</div></div></div>
+  </div>
+
+  <div class="note" style="margin-top:24px;">The dark-mode accent and semantic colors above are tuned for a near-black background and drop as low as 1.6–3.4:1 contrast as text on white — well under the 4.5:1 WCAG AA floor for normal text. Anytime one of these needs to sit on a white or near-white surface as text or a small icon (not just a large background fill), use the corresponding "light-bg safe" shade instead. These are exactly the values shipped in <code>css/styles.css</code>'s <code>[data-theme="light"]</code> block, verified with computed relative-luminance contrast ratios, not eyeballed.</div>
+
+  <h2>Typography</h2>
+  <div class="type-sample">
+    <div class="label">Heading — Satoshi (web) / Poppins (used for static asset exports in this kit)</div>
+    <div style="font-family:var(--font-heading); font-weight:700; font-size:2rem; color:var(--ink);">Every AI model. One accountable platform.</div>
+  </div>
+  <div class="type-sample">
+    <div class="label">Body — Inter (web) / Arial (fallback used in this kit)</div>
+    <div style="font-size:1.05rem; color:var(--ink-secondary);">One chat experience employees love. One governed platform your CISO can defend.</div>
+  </div>
+  <div class="type-sample">
+    <div class="label">Mono — Fira Code (web) / DejaVu Sans Mono (used in this kit)</div>
+    <div style="font-family:var(--font-mono); color:var(--ink-secondary);">01 · WHAT GOVERNAI DOES</div>
+  </div>
+  <div class="note">This kit's SVG/PNG exports substitute Poppins and system fonts because Satoshi and Fira Code are loaded as web fonts from Fontshare/Google Fonts on the live site and aren't locally licensed for static export in this sandbox. For pixel-exact production assets, re-export the SVGs with Satoshi installed, or hand this file to a designer with the Fontshare license.</div>
+
+  <h2>Messaging principles</h2>
+  <p>Established during the headline/tagline review pass on the live site. Apply these to any new copy until a full brand-voice guide exists:</p>
+  <ul>
+    <li><strong style="color:var(--ink);">Short and parallel beats long and descriptive.</strong> Competitors in this category ("One API, every model") use 4–5 word taglines. Trailing dependent clauses ("...your company uses.") are where attention drops — prefer two short sentences over one long one.</li>
+    <li><strong style="color:var(--ink);">Lead with tension, not features.</strong> The real hook is the villain already named in body copy — personal ChatGPT logins, unaudited API keys — not a list of capabilities. Headlines should invoke the stakes, not just describe the product.</li>
+    <li><strong style="color:var(--ink);">"Accountable platform," not "control plane."</strong> Retired sitewide as of this pass — too infra-jargon, too close to how every gateway competitor describes itself.</li>
+    <li><strong style="color:var(--ink);">No unqualified superlatives.</strong> Avoid "the only platform that…" claims without a qualifier. Prefer specific, defensible framing ("built in from day one, not bolted on") over absolute claims that invite a counterexample.</li>
+    <li><strong style="color:var(--ink);">Compliance postures, not certifications.</strong> HIPAA, GDPR, CCPA, NIST AI RMF are "-aligned," never presented as badges or certifications GovernAI hasn't actually earned (SOC 2, ISO 27001 — do not use until true).</li>
+    <li><strong style="color:var(--ink);">Attribute every quote.</strong> If it's in quotation marks, it needs a speaker or a clear "this is our analysis" label — never an unattributed pull-quote that could read as a fabricated testimonial.</li>
+  </ul>
+
+  <h2>Component patterns</h2>
+  <p>Conventions established during the review-feedback pass. Apply these to any new card, box, or table component so the site stays visually consistent.</p>
+  <ul>
+    <li><strong style="color:var(--ink);">Card hover.</strong> Every card-like surface (pricing card, quote card, team card, compare card, etc.) lifts <code>translateY(-4px)</code>, its border shifts to the accent border color, and its shadow steps up to the "lg" shadow token — all on a 0.32s eased transition. Small chip-style elements (logo chips, team rows) use a lighter <code>-3px</code> lift with the "md" shadow instead.</li>
+    <li><strong style="color:var(--ink);">Section dividers.</strong> A thin centered gradient line (<code>.section-divider</code>, max-width 640px, fades to transparent at both ends) now separates every major section on all 8 marketing pages, so long pages read as distinct blocks rather than one continuous scroll.</li>
+    <li><strong style="color:var(--ink);">Comparison-table marks.</strong> "Yes" checkmarks are bold and enlarged (1.3rem, weight 800) in the success color; "no" dashes stay at the muted ink color, no reduced opacity — a lighter-opacity dash was tried and tested at under 2.5:1 contrast in both themes, so weight/color contrast alone carries the distinction.</li>
+    <li><strong style="color:var(--ink);">Third-party integration logos.</strong> The homepage's "Model Providers" / "Knowledge Connectors" strip shows real vendor marks (OpenAI, Anthropic, Gemini, Mistral, Slack, Notion, GitHub, Salesforce, Atlassian, Google Drive, Microsoft 365) each on a small white rounded swatch, so single-color marks stay legible in both dark and light mode regardless of the vendor's own brand colors. These live in <code>/logos</code> on the site itself, not in this kit — they're other companies' trademarks, used only to describe interoperability, and aren't GovernAI brand assets.</li>
+  </ul>
+
+  <h2>What's in this kit</h2>
+  <table>
+    <tr><th>File</th><th>Use</th></tr>
+    <tr><td><code>logo/governai-wordmark-dark-bg.svg</code> + <code>.png</code> (@1x/@2x)</td><td>Primary logo, dark surfaces</td></tr>
+    <tr><td><code>logo/governai-wordmark-light-bg.svg</code> + <code>.png</code> (@1x/@2x)</td><td>Primary logo, light surfaces</td></tr>
+    <tr><td><code>logo/governai-mark.svg</code> + PNG (16/32/192/512)</td><td>Icon mark — favicons, app icons, social profile photos</td></tr>
+    <tr><td><code>favicon/</code></td><td>favicon.svg, favicon.ico, apple-touch-icon-180.png — drop-in for any site's <code>&lt;head&gt;</code></td></tr>
+    <tr><td><code>social/og-image.svg</code> + <code>og-image-1200x630.png</code></td><td>Open Graph / Twitter card share image</td></tr>
+    <tr><td><code>brand-guide.html</code></td><td>This document</td></tr>
+  </table>
+
+</div>
+</body>
+</html>
