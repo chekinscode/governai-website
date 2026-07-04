@@ -419,7 +419,13 @@ section { padding: 96px 0; position: relative; }
 .quote-card cite { font-style: normal; font-size: 0.85rem; color: var(--ink-muted); display: block; margin-top: 18px; }
 
 /* -------------------- 13a. Hero -------------------- */
-.hero h1, .section-head h2 { text-align: justify; text-align-last: center; }
+/* Balanced line-wrapping on big display headlines — NOT text-align:justify.
+   Justify stretches word gaps to fill the line width, which is invisible on
+   small paragraph text but turns into huge, ugly gaps on large bold display
+   type with only a few words per line. text-wrap:balance instead adjusts
+   *where the line breaks fall* so wrapped lines read as similar lengths,
+   with normal, even word spacing — centered stays centered via the parent. */
+.hero h1, .section-head h2 { text-wrap: balance; }
 .hero { padding: 88px 0 40px; overflow: hidden; position: relative; }
 .hero::before {
   content: ''; position: absolute; top: -20%; left: 50%; transform: translateX(-50%);
