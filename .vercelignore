@@ -12,5 +12,5 @@ patch_diff2.js
 implementation_plan.md
 web_guides.md
 *.docx
-.vercel
-.env*
+.git/
+.env.local
