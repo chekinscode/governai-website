@@ -303,13 +303,37 @@ section { padding: 96px 0; position: relative; }
 }
 .theme-toggle:hover { border-color: var(--border-accent); color: var(--accent); }
 
+.nav-links-mobile-actions { display: none; }
+
 @media (max-width: 900px) {
-  .nav-links { position: fixed; top: var(--header-h); left: 0; right: 0; flex-direction: column; align-items: stretch;
+  .nav-inner { gap: 12px; }
+  .nav-links {
+    position: fixed; top: var(--header-h); left: 0; right: 0; max-height: calc(100vh - var(--header-h));
+    overflow-y: auto; flex-direction: column; align-items: stretch;
     background: var(--bg-raised); border-bottom: 1px solid var(--border); padding: 20px 24px; gap: 16px;
-    transform: translateY(-8px); opacity: 0; pointer-events: none; transition: transform var(--base), opacity var(--base); }
+    transform: translateY(-8px); opacity: 0; pointer-events: none; transition: transform var(--base), opacity var(--base);
+  }
   .nav-links.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
-  .nav-hamburger { display: flex; }
-  .nav-actions .btn-outline, .nav-actions .nav-link { display: none; }
+  .nav-hamburger { display: flex; flex-shrink: 0; }
+  /* All CTA buttons move out of the header bar on mobile — the bar only
+     needs to hold the logo, theme toggle, and hamburger, or it overflows
+     and gets clipped by the sitewide overflow-x:hidden safety net. */
+  .nav-actions .btn { display: none; }
+  .nav-actions { gap: 6px; }
+  /* ...and reappear stacked at the bottom of the hamburger panel instead,
+     so Log In / View Demo / Start Free Trial stay reachable on mobile. */
+  .nav-links-mobile-actions {
+    display: flex; flex-direction: column; gap: 12px;
+    margin-top: 8px; padding-top: 16px; border-top: 1px solid var(--border);
+  }
+  .nav-links-mobile-actions .btn { width: 100%; }
+}
+
+@media (max-width: 640px) {
+  .btn { white-space: normal; text-align: center; }
+  .panel { padding: 28px !important; }
+  .auth-card { padding: 28px 24px !important; margin: 24px auto; }
+  .hero-widget-head { flex-wrap: wrap; gap: 10px; }
 }
 
 /* -------------------- 9. Footer -------------------- */
