@@ -123,6 +123,43 @@
     });
   }
 
+  /* ---------- Calendly popup for every "Book a demo" CTA ----------
+     Loads Calendly's widget assets once, then intercepts clicks on any
+     anchor labelled "Book a demo" to open the scheduling popup. If the
+     Calendly script hasn't loaded (blocked, offline, slow), the click
+     falls through to its href (contact.html) — no dead buttons. ---------- */
+  var CALENDLY_URL = "https://calendly.com/perplexed-vk/30min";
+  function initCalendly() {
+    var demoLinks = [];
+    document.querySelectorAll("a.btn, a.nav-link, footer a").forEach(function (a) {
+      if (a.textContent.trim().toLowerCase() === "book a demo") demoLinks.push(a);
+    });
+    if (!demoLinks.length) return;
+
+    if (!document.querySelector('link[href*="assets.calendly.com"]')) {
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = "https://assets.calendly.com/assets/external/widget.css";
+      document.head.appendChild(link);
+    }
+    if (!document.querySelector('script[src*="assets.calendly.com"]')) {
+      var script = document.createElement("script");
+      script.src = "https://assets.calendly.com/assets/external/widget.js";
+      script.async = true;
+      document.head.appendChild(script);
+    }
+
+    demoLinks.forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        if (window.Calendly && typeof window.Calendly.initPopupWidget === "function") {
+          e.preventDefault();
+          window.Calendly.initPopupWidget({ url: CALENDLY_URL });
+        }
+        /* else: allow default navigation to contact.html as a fallback */
+      });
+    });
+  }
+
   /* ---------- Typing effect utility (used by hero + widgets) ---------- */
   window.GovernAI = window.GovernAI || {};
   window.GovernAI.reducedMotion = reducedMotion;
@@ -148,5 +185,6 @@
     initCounters();
     initTabs();
     initToggles();
+    initCalendly();
   });
 })();
